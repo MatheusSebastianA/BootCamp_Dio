@@ -93,13 +93,14 @@ def listar_contas(contas):
         print("Não há contas criadas até o momento, seja o primeiro a criá-la") 
     for conta in contas:
         linha = f"""
-Agência: {conta["agencia"]}
+Agência:         {conta["agencia"]}
 Número da conta: {conta["numero_conta"]}
-Titular: {conta["usuario"]["nome"]}
+Titular:         {conta["usuario"]["nome"]}
         """
         print("-"*50)
         print(linha)
     ...
+
 def main():
     LIMITE_SAQUES = 3
     AGENCIA = "0001"
